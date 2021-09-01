@@ -6,7 +6,7 @@ new_file = open("CupcakeInvoices.csv")
 cupcake_type = []
 
 for line in new_file:
-    line = line.rstrip('\n').split(',')
+    line = line.rstrip('').split(',')
     # print(int(line[3])* float(line[4]))
     # cupcake_type.append(line[2])
     # int(line[3])
@@ -14,7 +14,7 @@ for line in new_file:
 
 total = 0
 for line1 in new_file:
-    line = line1.rstrip('\n').split(',')
+    line = line1.rstrip('').split(',')
     total += (int(line[3]) * float(line[4]))
 
 # print(total)
@@ -22,10 +22,10 @@ for line1 in new_file:
 
 new_file.close()
 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 
-plt.plot(["chocolate","Vanilla","Vanilla",],[98,140,25])
-plt.ylabel('Amount Sold')
-plt.xlabel("Weekday")
-plt.show()
+# plt.plot(["chocolate","Vanilla","Vanilla",],[98,140,25])
+# plt.ylabel('Amount Sold')
+# plt.xlabel("Weekday")
+# plt.show()
